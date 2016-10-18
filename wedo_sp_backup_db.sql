@@ -17,7 +17,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-CREATE proc [dbo].[apex_sp_backup_db] @amDbModel varchar(50), @backupDir varchar(50)
+CREATE proc [dbo].[wedo_sp_backup_db] @amDbModel varchar(50), @backupDir varchar(50)
 as
 declare @dbname sysname
 declare @bckstmt varchar(500)
