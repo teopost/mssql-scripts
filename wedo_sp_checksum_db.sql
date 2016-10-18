@@ -17,7 +17,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-CREATE proc [dbo].[apex_sp_checksum_db] @database_name varchar(100) = null,  @mode varchar(1) = 'S' /* S= Summary, R=Report*/ 
+CREATE proc [dbo].[wedo_sp_checksum_db] @database_name varchar(100) = null,  @mode varchar(1) = 'S' /* S= Summary, R=Report*/ 
 as
 declare 
   @dbname sysname, 
