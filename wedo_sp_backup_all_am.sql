@@ -20,7 +20,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-create proc [dbo].[apex_sp_backup_all_am] @backupDir varchar(50)
+create proc [dbo].[wedo_sp_backup_all_am] @backupDir varchar(50)
 as
 declare @dbname sysname
 begin 
