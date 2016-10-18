@@ -10,7 +10,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-CREATE  Proc [dbo].[apex_sp_bcp_export]
+CREATE  Proc [dbo].[wedo_sp_bcp_export]
 @dbName varchar(30),  
 @tbName varchar(30),  
 @filePath varchar(80)
