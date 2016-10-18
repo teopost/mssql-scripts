@@ -1,14 +1,14 @@
 USE [master]
 GO
 
-/****** Object:  StoredProcedure [dbo].[apex_sp_create_login]    Script Date: 07/03/2014 18.17.17 ******/
+/****** Object:  StoredProcedure [dbo].[wedo_sp_create_login]    Script Date: 07/03/2014 18.17.17 ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE proc [dbo].[apex_sp_create_login] @loginToCreate varchar(500)
+CREATE proc [dbo].[wedo_sp_create_login] @loginToCreate varchar(500)
 as
 declare @creaLogin  varchar(600)
 declare @creaServerRole  varchar(600)
