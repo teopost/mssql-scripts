@@ -31,7 +31,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE proc [dbo].[apex_sp_restore_db]  @dbToCreate varchar(100), @backupToRestore varchar(100), @pathDatafiles varchar(400), @pathLogfiles varchar(400)
+CREATE proc [dbo].[wedo_sp_restore_db]  @dbToCreate varchar(100), @backupToRestore varchar(100), @pathDatafiles varchar(400), @pathLogfiles varchar(400)
 as
 declare @dbname   sysname
 
