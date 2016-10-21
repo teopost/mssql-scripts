@@ -26,7 +26,8 @@ declare @dbname sysname
 begin 
   set nocount on
   create table #userdbs (name sysname)
-  insert into #userdbs select name from sysdatabases where name LIKE 'AM_%'
+  insert into #userdbs select name from sys.databases where DB_ID(name) > 4 and state = 0
+  --from sysdatabases where name LIKE 'AM_%'
   declare cdball cursor for select name from #userdbs 
   open cdball
   fetch cdball into @dbname
