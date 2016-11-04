@@ -33,7 +33,7 @@ begin
   fetch cdball into @dbname
   while @@fetch_status = 0 
   begin 
-    EXEC master.dbo.apex_sp_backup_db @dbname, @backupDir
+    EXEC master.dbo.wedo_sp_backup_db @dbname, @backupDir
     print @dbname
     fetch cdball into @dbname
   end 
