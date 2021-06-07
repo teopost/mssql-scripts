@@ -31,7 +31,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE proc [dbo].[wedo_sp_restore_db]  @dbToCreate varchar(100), @backupToRestore varchar(100), @pathDatafiles varchar(400), @pathLogfiles varchar(400)
+
+create proc [dbo].[wedo_sp_restore_db]  @dbToCreate varchar(100), @backupToRestore varchar(100), @pathDatafiles varchar(400), @pathLogfiles varchar(400)
 as
 declare @dbname   sysname
 
@@ -63,9 +64,10 @@ declare @fileListTable table
     LogGroupGUID         uniqueidentifier,
     DifferentialBaseLSN  numeric(25,0),
     DifferentialBaseGUID uniqueidentifier,
-    IsReadOnl            bit,
+    IsReadOnly           bit,
     IsPresent            bit,
-    TDEThumbprint        varbinary(32)
+    TDEThumbprint        varbinary(32),
+    SnapShotUrl          nvarchar(260)
 )
 
 begin
@@ -91,9 +93,4 @@ begin
    
 end
 
-
-
-
-GO
-
-
+go
