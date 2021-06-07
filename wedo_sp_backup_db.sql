@@ -1,7 +1,7 @@
 /*
 
 Backup Sample: 
-exec apex_sp_backup_db 'AM_ROMIRI', 'c:\tmp'
+exec wedo_sp_backup_db 'AM_ROMIRI', 'c:\tmp'
 go
 
 */
@@ -9,7 +9,7 @@ go
 USE [master]
 GO
 
-/****** Object:  StoredProcedure [dbo].[sp_backup_db]    Script Date: 07/03/2014 18.23.35 ******/
+/****** Object:  StoredProcedure [dbo].[wedo_sp_backup_db]    Script Date: 07/03/2014 18.23.35 ******/
 SET ANSI_NULLS ON
 GO
 
